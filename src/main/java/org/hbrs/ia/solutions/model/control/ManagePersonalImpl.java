@@ -31,8 +31,8 @@ public class ManagePersonalImpl implements ManagePersonal{
 
     @Override
     public void addSocialPerformanceRecord( SocialPerformanceRecord record, SalesMan salesMan ) {
-        salesmen.updateOne(eq( SalesMan.Constants.SID , salesMan.getId()),
-                pushEach( SocialPerformanceRecord.Constants.KEY_OF_RECORD ,
+        salesmen.updateOne( eq( SalesMan.Constants.SID , salesMan.getId()),
+                pushEach( SocialPerformanceRecord.Constants.KEY_OF_RECORD,
                         Arrays.asList( record.toDocument() ) ) );
     }
 
@@ -100,7 +100,8 @@ public class ManagePersonalImpl implements ManagePersonal{
 
     @Override
     public List<SocialPerformanceRecord> readSocialPerformanceRecord(SalesMan salesMan) {
-        FindIterable<Document> findIterable = salesmen.find( eq(SalesMan.Constants.SID, salesMan.getId()));
+        FindIterable<Document> findIterable
+                = salesmen.find( eq(SalesMan.Constants.SID, salesMan.getId()));
 
         MongoCursor<Document> cursor = findIterable.cursor();
         Document document = cursor.next();
