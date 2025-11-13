@@ -1,7 +1,7 @@
-## Useful ressources for lecture Integration Architectures
+## Useful ressources for working with MongoDB (SE-1)
 (Prof. Dr. Sascha Alda)
 
-In this readme, you find various useful links especially for working with MongoDB together with the programming language Java. These will be useful especially for the exercise sheets no. 1 and 2.
+In this readme, you find various useful links especially for working with MongoDB together with the programming language Java. 
 
 
 ### Prerequisites
@@ -14,6 +14,10 @@ or (even better) here:
 https://www.mongodb.com/docs/manual/administration/install-community/
 
 Community Version 4.2 and 7.0 (latest release) work fine with our examples.
+
+For the SE-1 semester project, you can our MongoDB in our SEPP server environment. Look at the class
+MongoDBControllerImpl in package org.hbrs.mongodb for further details. The DB can be used by using 
+the interface MongoDBControllerInterface. See the Junit test for an example.
  
 ### Further nice links for supporting MongoDB
  
@@ -58,17 +62,3 @@ https://stackoverflow.com/questions/30690295/removing-warning-messages-on-intell
 ### IDE
 We recommend installing and using the IDE IntelliJ. As a member of the University you can register yourself easily in order to obtain the Ultimate-Version, which is a fully equipped version with the latest features. The necessary key expires after one year, but can easily be refreshed afterwards. <br>
 https://www.jetbrains.com/idea/
-
-### Resources for UML tools:
-
-UMLet 14.3
-A good and well-aranged desktop tool for modelling UML. Installations can be found for Windows / MAC / Linux. The usability is a bit tricky in the beginning, but somewhat effective a short while ;-)
-http://www.umlet.com/
-
-Draw.io
-A lean and browser-based tool, thus, no installation of a local machine is necessary. Documents can be stored in various formats.
-https://app.diagrams.net/
-
-Mermaid:
-Mermaid is a DSL-based Editor, that supports various diagram types. It can also be integrated within a markdown document, see [here](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)
-https://mermaid.live
