@@ -30,7 +30,8 @@ public class ManagePersonalImpl implements ManagePersonal{
     }
 
     @Override
-    public void addSocialPerformanceRecord( SocialPerformanceRecord record, SalesMan salesMan ) {
+    public void addSocialPerformanceRecord( SocialPerformanceRecord record,
+                                            SalesMan salesMan ) {
         salesmen.updateOne( eq( SalesMan.Constants.SID , salesMan.getId()),
                 pushEach( SocialPerformanceRecord.Constants.KEY_OF_RECORD,
                         Arrays.asList( record.toDocument() ) ) );
